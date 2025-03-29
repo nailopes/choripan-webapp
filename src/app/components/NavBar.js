@@ -36,19 +36,19 @@ const Navbar = () => {
         <nav className="relative w-full bg-white z-50 shadow-md">
             <div className="relative container mx-auto px-6 py-4 flex items-center justify-between h-[9.5rem]">
 
-                {/* Logo (Centered with Semi-Circle Effect) */}
-                <div className="absolute left-1/2 transform -translate-x-1/2">
+                {/* Logo (Centered with Semi-Circle Effect - Hidden on Small Screens, Visible on Tablets and Larger) */}
+                <div className="md:absolute md:left-1/2 md:transform md:-translate-x-1/2">
                     <Image
                         src="/images/logo.webp"
                         alt="Choripan Logo"
-                        width={200}
-                        height={200}
-                        className="relative z-10 transform translate-y-1/4"
+                        width={120} //smaller phones!
+                        height={120}
+                        className="md:w-[200px] md:h-[200px] relative z-10 transform md:translate-y-1/4" //bigger screens
                     />
                 </div>
 
-                {/* Social Media (Left Side) */}
-                <div className="flex space-x-4">
+                {/* Social Media (Left Side - Hidden on Small Screens, Visible on Tablets and Larger) */}
+                <div className="hidden md:flex space-x-4">
                     <a
                         href="https://www.facebook.com"
                         target="_blank"
@@ -75,7 +75,7 @@ const Navbar = () => {
                     </a>
                 </div>
 
-                {/* Navigation Button & Dropdown */}
+                {/* Navigation Button & Dropdown (Always viseble)*/}
                 <div className="relative" ref={dropdownRef}>
                     {/* Button to Open Dropdown */}
                     <button

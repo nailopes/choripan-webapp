@@ -26,7 +26,7 @@ const Footer = () => {
             <div className="container mx-auto px-4 flex flex-col items-center gap-12 text-center">
                 {/* Subscription Section */}
                 <div className="flex flex-col items-center w-full">
-                    <h3 className="text-2xl font-bondrians mb-6 max-w-xl md:w-3/4">Stay Tuned!</h3>
+                    <h3 className="text-2xl font-bondrians mb-6">Stay Tuned!</h3>
                     <form onSubmit={handleSubscribe} className="flex">
                         <input
                             type="email"

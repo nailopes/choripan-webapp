@@ -50,7 +50,7 @@ const AboutSection = () => {
                     Our Story
                 </h2>
                 <p className="text-lg font-sitka text-dark-brown leading-relaxed">
-                    Choripan is more than just a sandwich - it's a culinary tradition that represents the heart and soul of South American street food. Originating in Argentina, this delectable dish combines chorizo sausage nestled in crusty bread, typically topped with chimichurri sauce.
+                    Choripan is more than just a sandwich - It&apos;s a culinary tradition that represents the heart and soul of South American street food. Originating in Argentina, this delectable dish combines chorizo sausage nestled in crusty bread, typically topped with chimichurri sauce.
                 </p>
                 <p className="text-lg font-sitka text-dark-brown leading-relaxed mb-6">
                     Our journey began in a small street corner in Buenos Aires, where generations of family recipes and passion for authentic flavors have been carefully preserved and shared.

@@ -24,7 +24,7 @@ export default function ContactPage() {
                 <div className="max-w-lg w-full">
                     <h1 className="text-4xl font-bold text-main-red mb-6 text-center">Contact Us</h1>
                     <p className="text-lg text-gray-700 mb-6 text-center">
-                        Have a question or want to reach out? Fill in the form below and we'll get back to you.
+                        Have a question or want to reach out? Fill in the form below and we&apos;ll get back to you.
                     </p>
 
                     <form onSubmit={handleSubmit} className="bg-white shadow-md rounded-lg p-6 w-full">

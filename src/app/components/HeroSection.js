@@ -31,11 +31,11 @@ const HeroSection = () => {
                 transition={{ duration: 1.2 }}
                 className="relative z-20 text-center text-white px-4"
             >
-                <h1 className="text-5xl md:text-8xl font-bondrians mb-4 text-white">
+                <h1 className="text-6xl md:text-8xl font-bondrians mb-4 text-white">
                     Choripan
                 </h1>
-                <p className="text-2xl md:text-3xl font-sitka mb-6 text-white">
-                    The Best Sandwich in the World
+                <p className="text-2xl md:text-4xl font-sitka mb-6 text-white">
+                    The Best SAUSWICH in the World
                 </p>
                 <button className="bg-main-red text-white px-8 py-3 rounded-full hover:bg-dark-brown transition-colors">
                     Explore Menu

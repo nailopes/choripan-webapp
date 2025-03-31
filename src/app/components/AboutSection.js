@@ -47,7 +47,7 @@ const AboutSection = () => {
                 className="space-y-6"
             >
                 <h2 className="text-4xl font-bondrians text-main-red mb-4">
-                    Our Choripan Story
+                    Our Story
                 </h2>
                 <p className="text-lg font-sitka text-dark-brown leading-relaxed">
                     Choripan is more than just a sandwich - it's a culinary tradition that represents the heart and soul of South American street food. Originating in Argentina, this delectable dish combines chorizo sausage nestled in crusty bread, typically topped with chimichurri sauce.

@@ -16,8 +16,8 @@ const ImageCarousel = () => {
         { id: 1, src: '/images/carousel-images/choripan1.webp', alt: 'Classic Choripan' },
         { id: 2, src: '/images/carousel-images/choripan2.webp', alt: 'Gourmet Choripan' },
         { id: 3, src: '/images/carousel-images/choripan3.webp', alt: 'Spicy Choripan' },
-        { id: 4, src: '/images/carousel-images/choripan1.webp', alt: 'Traditional Choripan' },
-        { id: 5, src: '/images/carousel-images/choripan2.webp', alt: 'Street Style Choripan' },
+        { id: 4, src: '/images/carousel-images/choripan1.webp', alt: 'Choriburger' },
+        { id: 5, src: '/images/carousel-images/choripan2.webp', alt: 'Choriwrap' },
     ];
 
     return (
@@ -59,7 +59,7 @@ const ImageCarousel = () => {
                                     objectFit="cover"
                                     className="rounded-lg transform transition-transform duration-300 group-hover:scale-105"
                                 />
-                                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 rounded-lg transition-all duration-300"></div>
+                                <div className="absolute inset-0 bg-black bg-opacity-0 rounded-lg transition-all duration-300"></div>
                             </div>
                         ))}
                     </div>

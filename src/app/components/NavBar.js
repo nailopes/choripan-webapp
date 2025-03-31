@@ -39,7 +39,7 @@ const Navbar = () => {
                 {/* Logo (Centered with Semi-Circle Effect - Hidden on Small Screens, Visible on Tablets and Larger) */}
                 <div className="absolute left-1/2 transform -translate-x-1/2">
                     <Image
-                        src="/images/logo.webp"
+                        src="/images/logo-round.webp"
                         alt="Choripan Logo"
                         width={200}
                         height={200}
@@ -80,7 +80,7 @@ const Navbar = () => {
                     {/* Button to Open Dropdown */}
                     <button
                         onClick={() => setIsOpen(!isOpen)}
-                        className="flex items-center justify-center space-x-2 border-2 border-main-red text-main-red md:w-48 px-6 py-3 rounded-lg hover:bg-main-red hover:text-white transition"
+                        className="flex items-center justify-center space-x-2 border-2 border-main-red hover:bg-white hover:text-main-red bg-main-red text-white transition md:w-48 px-6 py-3 rounded-lg"
                     >
                         <Menu size={24} />
                         <span className="font-semibold hidden sm:inline">Navigation</span>

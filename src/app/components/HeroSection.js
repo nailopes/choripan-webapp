@@ -32,7 +32,7 @@ const HeroSection = () => {
                 className="relative z-20 text-center text-white px-4"
             >
                 <h1 className="text-6xl md:text-8xl font-bondrians mb-4 text-white">
-                    Choripan
+                    choripan
                 </h1>
                 <p className="text-2xl md:text-4xl font-sitka mb-6 text-white">
                     The Best SAUSWICH in the World

@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import Link from "next/link";
 
 const AboutSection = () => {
     const { ref, inView } = useInView({
@@ -56,9 +57,11 @@ const AboutSection = () => {
                 <p className="text-lg font-sitka text-dark-brown leading-relaxed mb-6">
                     Now based in Calgary, we bring you the “best SAUSWICH in the world,” crafted with love, tradition, and authentic taste.
                 </p>
-                <button className="bg-accent-orange text-white px-6 py-3 rounded-full hover:bg-main-red transition-colors font-sitka">
-                    Learn More
-                </button>
+                <Link href="/about">
+                    <button className="bg-accent-orange text-white px-6 py-3 mt-6 rounded-full hover:bg-main-red transition-colors font-sitka">
+                        Learn More
+                    </button>
+                </Link>
             </motion.div>
         </section>
     );

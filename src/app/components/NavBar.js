@@ -4,7 +4,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Menu } from 'lucide-react';
-import { Facebook, Instagram, Twitter, TwitterIcon, X } from 'lucide-react';
+import { SiFacebook, SiInstagram, SiX } from 'react-icons/si';
+
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -37,15 +38,15 @@ const Navbar = () => {
             <div className="relative container mx-auto px-6 py-4 flex items-center justify-between h-[9.5rem]">
 
                 {/* Logo (Centered with Semi-Circle Effect - Hidden on Small Screens, Visible on Tablets and Larger) */}
-                <div className="absolute left-1/2 transform -translate-x-1/2">
+                <Link href="/" className="absolute left-1/2 transform -translate-x-1/2">
                     <Image
                         src="/images/logo-round.webp"
                         alt="Choripan Logo"
                         width={200}
                         height={200}
-                        className="relative z-10 transform translate-y-1/4" // Bigger on larger screens
+                        className="relative z-10 transform translate-y-1/4"
                     />
-                </div>
+                </Link>
 
                 {/* Social Media (Left Side - Hidden on Small Screens, Visible on Tablets and Larger) */}
                 <div className="hidden md:flex space-x-4">
@@ -53,9 +54,9 @@ const Navbar = () => {
                         href="https://www.facebook.com"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-12 h-12 flex items-center justify-center rounded-full bg-accent-orange border-2 border-transparent hover:bg-white hover:text-black hover:border-black transition-colors"
+                        className="w-12 h-12 flex items-center justify-center rounded-full bg-accent-orange hover:bg-white hover:text-black transition-colors"
                     >
-                        <Facebook size={28} />
+                        <SiFacebook size={28} />
                     </a>
                     <a
                         href="https://www.instagram.com"
@@ -63,7 +64,7 @@ const Navbar = () => {
                         rel="noopener noreferrer"
                         className="w-12 h-12 flex items-center justify-center rounded-full bg-accent-orange hover:bg-white hover:text-black transition-colors"
                     >
-                        <Instagram size={28} />
+                        <SiInstagram size={28} />
                     </a>
                     <a
                         href="https://x.com"
@@ -71,7 +72,7 @@ const Navbar = () => {
                         rel="noopener noreferrer"
                         className="w-12 h-12 flex items-center justify-center rounded-full bg-accent-orange hover:bg-white hover:text-black transition-colors"
                     >
-                        <Twitter size={28} />
+                        <SiX size={28} />
                     </a>
                 </div>
 

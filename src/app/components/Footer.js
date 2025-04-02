@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Facebook, Instagram, Twitter, TwitterIcon, X } from 'lucide-react';
+import { SiFacebook, SiInstagram, SiX } from 'react-icons/si';
 
 const Footer = () => {
     const [email, setEmail] = useState('');
@@ -55,7 +56,7 @@ const Footer = () => {
                             rel="noopener noreferrer"
                             className="w-14 h-14 flex items-center justify-center rounded-full bg-accent-orange hover:bg-white hover:text-black transition-colors"
                         >
-                            <Facebook size={28} />
+                            <SiFacebook size={28} />
                         </a>
                         <a
                             href="https://www.instagram.com"
@@ -63,7 +64,7 @@ const Footer = () => {
                             rel="noopener noreferrer"
                             className="w-14 h-14 flex items-center justify-center rounded-full bg-accent-orange hover:bg-white hover:text-black transition-colors"
                         >
-                            <Instagram size={28} />
+                            <SiInstagram size={28} />
                         </a>
                         <a
                             href="https://x.com"
@@ -71,7 +72,7 @@ const Footer = () => {
                             rel="noopener noreferrer"
                             className="w-14 h-14 flex items-center justify-center rounded-full bg-accent-orange hover:bg-white hover:text-black transition-colors"
                         >
-                            <Twitter size={28} />
+                            <SiX size={28} />
                         </a>
                     </div>
                 </div>

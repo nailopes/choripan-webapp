@@ -27,7 +27,7 @@ const Footer = () => {
             <div className="container mx-auto px-4 flex flex-col items-center gap-12 text-center">
                 {/* Subscription Section */}
                 <div className="flex flex-col items-center w-full">
-                    <h3 className="text-2xl font-bondrians mb-6">Subscribe for updates!</h3>
+                    <h3 className="text-4xl font-bondrians mb-6">Subscribe for updates!</h3>
                     <form onSubmit={handleSubscribe} className="flex">
                         <input
                             type="email"
@@ -48,7 +48,7 @@ const Footer = () => {
 
                 {/* Social Media */}
                 <div className="flex flex-col items-center">
-                    <h3 className="text-2xl font-bondrians mb-6">Follow Us!</h3>
+                    <h3 className="text-4xl font-bondrians mb-6">Follow Us!</h3>
                     <div className="flex space-x-4">
                         <a
                             href="https://www.facebook.com"

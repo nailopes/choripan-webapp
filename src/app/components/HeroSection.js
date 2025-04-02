@@ -37,9 +37,13 @@ const HeroSection = () => {
                 <p className="text-2xl md:text-4xl font-sitka mb-6 text-white">
                     The Best SAUSWICH in the World
                 </p>
-                <button className="bg-main-red text-white px-8 py-3 rounded-full hover:bg-dark-brown transition-colors">
+                <a
+                    href="#gallery"
+                    className="bg-main-red text-white px-8 py-4 rounded-full hover:bg-dark-brown transition-colors font-sitka"
+                >
                     Explore Menu
-                </button>
+                </a>
+
             </motion.div>
         </section>
     );

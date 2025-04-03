@@ -35,7 +35,7 @@ export default function AboutPage() {
     return (
         <>
             {/* Hero Section */}
-            <section className="bg-gray-50 pt-40 py-20">
+            <section className="bg-gray-100  pt-40 py-20">
                 <div className="container mx-auto px-6 max-w-5xl">
                     <div className="flex flex-col md:flex-row items-center justify-between gap-12">
                         {/* Hero Image */}
@@ -143,7 +143,7 @@ export default function AboutPage() {
             </section>
 
             {/* Values Section */}
-            <section className="py-16 bg-gray-50">
+            <section className="py-16 bg-gray-100">
                 <div className="container mx-auto px-6 max-w-5xl">
                     <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">Our Values</h2>
 

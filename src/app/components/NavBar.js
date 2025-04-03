@@ -34,17 +34,17 @@ const Navbar = () => {
     }, [isOpen]);
 
     return (
-        <nav className="relative w-full bg-white z-50 shadow-md">
-            <div className="relative container mx-auto px-6 py-4 flex items-center justify-between h-[9.5rem]">
+        <nav className="relative w-full bg-white z-50 ">
+            <div className="relative container mx-auto px-6 py-4 flex items-center justify-between h-32 lg:h-[9.5rem]">
 
-                {/* Logo (Centered with Semi-Circle Effect - Hidden on Small Screens, Visible on Tablets and Larger) */}
-                <Link href="/" className="absolute left-1/2 transform -translate-x-1/2">
+                {/* Logo (Centered with Semi-Circle Effect) */}
+                <Link href="/" className="absolute left-1/2 transform -translate-x-1/2 ">
                     <Image
                         src="/images/logo-round.webp"
                         alt="Choripan Logo"
                         width={200}
                         height={200}
-                        className="relative z-10 transform translate-y-1/4"
+                        className="relative z-10 transform translate-y-1/3 lg:translate-y-1/4 w-32 h-32 md:w-40 md:h-40 lg:w-52 lg:h-52"
                     />
                 </Link>
 
@@ -81,10 +81,20 @@ const Navbar = () => {
                     {/* Button to Open Dropdown */}
                     <button
                         onClick={() => setIsOpen(!isOpen)}
-                        className="flex items-center justify-center space-x-2 border-2 border-main-red hover:bg-white hover:text-main-red bg-main-red text-white transition md:w-48 px-6 py-3 rounded-lg"
-                    >
-                        <Menu size={24} />
-                        <span className="font-semibold hidden sm:inline">Navigation</span>
+                        className="
+                          flex items-center justify-center
+                         border-2 border-main-red
+                         hover:bg-white hover:text-main-red
+                         bg-main-red text-white transition
+                         rounded-lg
+
+                         w-12 h-12                   /* Square on small screens */
+                         md:w-32 md:h-12             /* medium rectangle on md screens */
+                         lg:w-48 lg:px-6 lg:py-3     /* larger button with padding on large+  */">
+                        <Menu size={20} className="sm:size-5 md:size-6" />
+                        <span className="font-semibold hidden lg:inline text-base ml-2">
+                            Navigation
+                        </span>
                     </button>
 
                     {/* Dropdown Menu (Appears Below Button) */}

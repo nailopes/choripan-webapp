@@ -18,7 +18,7 @@ export default function ContactPage() {
     };
 
     return (
-        <section className="bg-gray-50">
+        <section className="bg-gray-100">
             <div className="container pt-20 mx-auto px-6 py-12 flex flex-col items-center">
                 {/* Centered Text and Form */}
                 <div className="max-w-lg w-full">

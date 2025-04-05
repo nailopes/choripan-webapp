@@ -80,9 +80,9 @@ const Footer = () => {
                 {/* Quick Links */}
                 <div className="flex flex-col items-center">
                     <ul className="flex flex-row space-x-6 font-sitka">
-                        <li><Link href="#home" className="hover:text-accent-orange">Home</Link></li>
-                        <li><Link href="#about" className="hover:text-accent-orange">About Us</Link></li>
-                        <li><Link href="#contact" className="hover:text-accent-orange">Contact</Link></li>
+                        <li><Link href="/" className="hover:text-accent-orange">Home</Link></li>
+                        <li><Link href="/about" className="hover:text-accent-orange">About Us</Link></li>
+                        <li><Link href="/contact" className="hover:text-accent-orange">Contact</Link></li>
                     </ul>
                 </div>
             </div>

@@ -127,7 +127,7 @@ export default function AboutPage() {
                             />
                         </div>
                         <div className="order-1 md:order-2">
-                            <h3 className="text-2xl font-semibold text-main-red mb-4">From Brazil to Calgary</h3>
+                            <h3 className="text-2xl font-semibold text-main-red mb-4">From South American to Calgary</h3>
                             <p className="text-gray-700 mb-4 leading-relaxed">
                                 The legacy continued when Hussa passed down the meat grinder that had been used since the very first batch in 1999 to his son Alex. A symbolic gesture representing generations of culinary expertise. With this treasured heirloom, Alex and his friend Fabio have revived the family tradition in Calgary.
                             </p>

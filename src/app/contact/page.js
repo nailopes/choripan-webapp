@@ -1,25 +1,92 @@
-"use client";
-import { Section } from "lucide-react";
-import { useState } from "react";
+'use client';
 
-export default function ContactPage() {
-    const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+import React, { useState } from 'react';
+import { useInView } from 'react-intersection-observer';
+
+const ContactForm = () => {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
+    const [errors, setErrors] = useState({});
+    const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitted, setSubmitted] = useState(false);
 
+
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+
     const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
+        const { name, value } = e.target;
+        setFormData(prev => ({
+            ...prev,
+            [name]: value
+        }));
+    };
+
+    const validateForm = () => {
+        const newErrors = {};
+
+        if (!formData.name.trim()) {
+            newErrors.name = 'Name is required';
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!formData.email.trim()) {
+            newErrors.email = 'Email is required';
+        } else if (!emailRegex.test(formData.email)) {
+            newErrors.email = 'Invalid email format';
+        }
+
+        if (!formData.message.trim()) {
+            newErrors.message = 'Message is required';
+        }
+
+        setErrors(newErrors);
+        return Object.keys(newErrors).length === 0;
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("Form Data Submitted:", formData);
-        setSubmitted(true);
-        setTimeout(() => setSubmitted(false), 3000);
+
+        if (validateForm()) {
+            setIsSubmitting(true);
+            try {
+                // TODO: Replace with actual email sending logic
+                const response = await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                });
+
+                if (response.ok) {
+                    setSubmitted(true);
+                    alert('Message sent successfully!');
+                    setFormData({ name: '', email: '', message: '' });
+                    setTimeout(() => {
+                        setSubmitted(false);
+                    }, 5000);
+
+                } else {
+                    alert('Failed to send message. Please try again.');
+                }
+            } catch (error) {
+                console.error('Submission error:', error);
+                alert('An error occurred. Please try again.');
+            } finally {
+                setIsSubmitting(false);
+            }
+        }
     };
 
     return (
         <section className="bg-gray-100">
-            <div className="container pt-20 mx-auto px-6 py-12 flex flex-col items-center">
+            <div className="container pt-40 mx-auto px-6 py-12 flex flex-col items-center">
                 {/* Centered Text and Form */}
                 <div className="max-w-lg w-full">
                     <h1 className="text-4xl font-bold text-main-red mb-6 text-center">Contact Us</h1>
@@ -78,3 +145,4 @@ export default function ContactPage() {
         </section>
     );
 }
+export default ContactForm;

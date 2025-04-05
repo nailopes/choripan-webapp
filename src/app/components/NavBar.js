@@ -44,7 +44,7 @@ const Navbar = () => {
                         alt="Choripan Logo"
                         width={200}
                         height={200}
-                        className="relative z-10 transform translate-y-1/3 lg:translate-y-1/4 w-32 h-32 md:w-40 md:h-40 lg:w-52 lg:h-52"
+                        className="relative z-10 transform translate-y-1/3 lg:translate-y-1/4 w-36 h-36 md:w-40 md:h-40 lg:w-52 lg:h-52"
                     />
                 </Link>
 

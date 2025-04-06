@@ -79,7 +79,7 @@ export default function AboutPage() {
             {/* Our Story Section */}
             <section className="py-20 bg-white">
                 <div className="container mx-auto px-6 max-w-5xl">
-                    <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">Our Family Legacy</h2>
+                    <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">Our Legacy</h2>
 
                     <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
                         <div>
@@ -88,19 +88,18 @@ export default function AboutPage() {
                                 It began in 1999 when Hussa, a Brazilian with a deep appreciation for his wife's Uruguayan culinary heritage, created his first batch of homemade chorizo. What started as weekend cooking with a close friend soon became a family tradition celebrated for its distinctive taste and quality.
                             </p>
                             <p className="text-gray-700 leading-relaxed">
-                                By 2009, this passion led to the first Choripan restaurant in Curitiba, Brazil. Though the physical location was brief, Hussa continued crafting his signature sausages for years, preserving the authentic techniques and flavors that made them special.
-                            </p>
+                                By 2009, this passion led to the opening of the first Choripan restaurant in Curitiba, Brazil. Though the physical location was short-lived, Hussa continued crafting his signature sausages and selling them by the kilogram to loyal customers, preserving the authentic techniques and flavors that made them special.                            </p>
                         </div>
                         <div className="grid grid-cols-2 gap-4">
                             <Image
-                                src="/images/hussa.png"
+                                src="/images/hussa.jpeg"
                                 alt="Hussa - The Founder"
                                 width={250}
                                 height={250}
                                 className="rounded-lg shadow-md object-cover w-full h-full"
                             />
                             <Image
-                                src="/images/original-restaurant.png"
+                                src="/images/original-restaurant.jpeg"
                                 alt="Original Choripan in Brazil"
                                 width={250}
                                 height={250}
@@ -127,15 +126,14 @@ export default function AboutPage() {
                             />
                         </div>
                         <div className="order-1 md:order-2">
-                            <h3 className="text-2xl font-semibold text-main-red mb-4">From South American to Calgary</h3>
+                            <h3 className="text-2xl font-semibold text-main-red mb-4">From South America to Calgary</h3>
                             <p className="text-gray-700 mb-4 leading-relaxed">
-                                The legacy continued when Hussa passed down the meat grinder that had been used since the very first batch in 1999 to his son Alex. A symbolic gesture representing generations of culinary expertise. With this treasured heirloom, Alex and his friend Fabio have revived the family tradition in Calgary.
-                            </p>
+                                The legacy continued when Hussa passed down the meat grinder, used since the very first batch in 1999, to his son Alex. This symbolic gesture marked the passing of the family recipe. With the recipe in hand, Alex invited his friend Fabio to partner with him in reviving the tradition, and together, they are bringing the family’s culinary heritage to Calgary.                            </p>
                             <p className="text-gray-700 leading-relaxed">
-                                Our "SAUSWICH"—as we playfully call it—stays true to the authentic methods that Hussa perfected. Each bite delivers the genuine taste of South American street food culture, prepared with care and served with pride.
+                                Introducing "The Best SAUSWICH in the world" where every bite is packed with tradition and flavor. Each bite delivers the genuine taste of South American street food culture, prepared with care and served with pride.
                             </p>
-                            <p className="text-gray-700 mt-4 italic">
-                                "We can&apos;t wait to share this experience with you. Find us, follow us, and take a bite—you&apos;ll taste the tradition in every sandwich."
+                            <p className="text-gray-700 mt-4">
+                                We can&apos;t wait to share this experience with you. Find us, follow us, and take a bite—you&apos;ll taste the tradition in every sandwich.
                             </p>
                         </div>
                     </div>
@@ -225,7 +223,7 @@ export default function AboutPage() {
                             </div>
                             <div>
                                 <h3 className="text-2xl font-semibold text-gray-800 mb-2">Alex</h3>
-                                <p className="text-main-red font-medium mb-3">Co-Founder & Chef</p>
+                                <p className="text-main-red font-medium mb-3">Co-Founder</p>
                                 <p className="text-gray-700">
                                     With deep roots in Uruguay and a childhood filled with authentic cooking, Alex brings his father's legacy to Calgary with the same passion that started it all.
                                 </p>
@@ -245,9 +243,9 @@ export default function AboutPage() {
                             </div>
                             <div>
                                 <h3 className="text-2xl font-semibold text-gray-800 mb-2">Fabio</h3>
-                                <p className="text-main-red font-medium mb-3">Co-Founder & Operations</p>
+                                <p className="text-main-red font-medium mb-3">Co-Founder</p>
                                 <p className="text-gray-700">
-                                    A culinary enthusiast with an entrepreneurial spirit, Fabio helps transform generations-old recipes into Calgary's most exciting food experience.
+                                    As a passionate food lover, Fabio is dedicated to turning traditional recipes into some of Calgary's most exciting culinary experiences—bringing fresh perspectives to the local restaurant scene for the first time.
                                 </p>
                             </div>
                         </div>

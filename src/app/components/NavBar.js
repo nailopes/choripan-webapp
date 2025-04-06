@@ -59,7 +59,7 @@ const Navbar = () => {
                         <SiFacebook size={28} />
                     </a> */}
                     <a
-                        href="https://www.instagram.com"
+                        href="https://www.instagram.com/choripan.ca"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-12 h-12 flex items-center justify-center rounded-full bg-accent-orange hover:bg-white hover:text-black transition-colors"
@@ -77,14 +77,18 @@ const Navbar = () => {
                 </div>
 
                 {/* Navigation Button & Dropdown (Always viseble)*/}
-                <div className="relative ml-auto">
-                    <Link href="/" className='font-bondrians text-xl px-5'>Home
-                    </Link>
-                    <Link href="/about" className='font-bondrians text-xl px-5'>About Us
-                    </Link>
-                    <Link href="/contact" className='font-bondrians text-xl px-5'>Contact
-                    </Link>
-
+                <div className="relative ml-auto mx-8 p-10 z-50">
+                    <div className="flex space-x-4">
+                        {/* <Link href="/" className="font-bondrians text-xl text-white  px-5 border-2 border-main-red px-6 py-3 rounded-lg bg-main-red">
+                            Home
+                        </Link> */}
+                        <Link href="/about" className="font-bondrians text-xl text-white px-5 border-2 border-main-red px-6 py-3 rounded-lg bg-main-red">
+                            About Us
+                        </Link>
+                        <Link href="/contact" className="font-bondrians text-xl text-white px-5 border-2 border-main-red px-6 py-3 rounded-lg bg-main-red">
+                            Contact
+                        </Link>
+                    </div>
                 </div>
             </div>
         </nav>

@@ -9,7 +9,7 @@ export default function Home() {
     <main>
       <HeroSection />
       <AboutSection />
-      <ImageCarousel id="gallery" />
+      {/* <ImageCarousel id="gallery" /> */}
       {/* <ContactForm /> */}
       <ScrollToTopButton />
     </main>

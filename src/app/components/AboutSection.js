@@ -51,11 +51,11 @@ const AboutSection = () => {
                     Our Story
                 </h2>
                 <p className="text-lg font-sitka text-dark-brown leading-relaxed">
-                    Choripan is more than a sandwich—it&apos;s a legacy of flavor passed down through generations. What
+                    Choripan is more than just a business—it&apos;s a tradition, a passion, and a story that spans over 25 years. What
                     started in 1999 as a homemade chorizo tradition between friends has evolved into a celebration of South American street food.
                 </p>
                 <p className="text-lg font-sitka text-dark-brown leading-relaxed mb-6">
-                    Now based in Calgary, we bring you the “best SAUSWICH in the world,” crafted with love, tradition, and authentic taste.
+                    Now based in Calgary, we bring you "The best SAUSWICH in the world”, crafted with love, tradition, and authentic taste.
                 </p>
                 <Link href="/about">
                     <button className="bg-accent-orange text-white px-6 py-3 mt- rounded-full hover:bg-main-red transition-colors font-sitka">

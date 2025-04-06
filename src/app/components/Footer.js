@@ -50,30 +50,30 @@ const Footer = () => {
                 <div className="flex flex-col items-center">
                     <h3 className="text-4xl font-bondrians mb-6">Follow Us!</h3>
                     <div className="flex space-x-4">
-                        <a
+                        {/* <a
                             href="https://www.facebook.com"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="w-14 h-14 flex items-center justify-center rounded-full bg-accent-orange hover:bg-white hover:text-black transition-colors"
                         >
                             <SiFacebook size={28} />
-                        </a>
+                        </a> */}
                         <a
-                            href="https://www.instagram.com"
+                            href="https://www.instagram.com/choripan.ca"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="w-14 h-14 flex items-center justify-center rounded-full bg-accent-orange hover:bg-white hover:text-black transition-colors"
                         >
                             <SiInstagram size={28} />
                         </a>
-                        <a
+                        {/* <a
                             href="https://x.com"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="w-14 h-14 flex items-center justify-center rounded-full bg-accent-orange hover:bg-white hover:text-black transition-colors"
                         >
                             <SiX size={28} />
-                        </a>
+                        </a> */}
                     </div>
                 </div>
 

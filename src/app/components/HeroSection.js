@@ -8,7 +8,7 @@ const HeroSection = () => {
     return (
         <section
             id="home"
-            className="relative mt-0 h-screen flex items-center justify-center overflow-hidden"
+            className="relative mt-0 h-[90vh] md:h-screen flex items-center justify-center overflow-hidden"
         >
             {/* Background Image */}
             <Image

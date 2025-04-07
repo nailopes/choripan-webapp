@@ -35,7 +35,7 @@ const Navbar = () => {
 
     return (
         <nav className="relative w-full bg-white z-50 ">
-            <div className="relative container mx-auto px-6 py-4 flex items-center justify-between h-32 lg:h-[9.5rem]">
+            <div className="relative container mx-auto px-6 md:px-6 lg:px-10 py-4 flex items-center justify-between h-32 lg:h-[9.5rem]">
 
                 {/* Logo (Centered with Semi-Circle Effect) */}
                 <Link href="/" className="absolute left-1/2 transform -translate-x-1/2 ">
@@ -76,19 +76,52 @@ const Navbar = () => {
                     </a> */}
                 </div>
 
-                {/* Navigation Button & Dropdown (Always viseble)*/}
-                <div className="relative ml-auto mx-8 p-10 z-50">
-                    <div className="flex space-x-4">
-                        {/* <Link href="/" className="font-bondrians text-xl text-white  px-5 border-2 border-main-red px-6 py-3 rounded-lg bg-main-red">
-                            Home
-                        </Link> */}
-                        <Link href="/about" className="font-bondrians text-xl text-white px-5 border-2 border-main-red px-6 py-3 rounded-lg bg-main-red">
-                            About Us
-                        </Link>
-                        <Link href="/contact" className="font-bondrians text-xl text-white px-5 border-2 border-main-red px-6 py-3 rounded-lg bg-main-red">
-                            Contact
-                        </Link>
-                    </div>
+                {/* Navigation Button */}
+                {/* Full nav links (only on md and up) */}
+                <div className="hidden md:flex space-x-4 ml-auto z-50">
+                    <Link href="/about" className="font-bondrians text-xl text-white px-4 py-1.5 border border-main-red rounded-lg bg-main-red transition-colors duration-200 hover:bg-white hover:text-main-red">
+                        About Us
+                    </Link>
+                    <Link href="/contact" className="font-bondrians text-xl text-white px-4 py-1.5 border border-main-red rounded-lg bg-main-red transition-colors duration-200 hover:bg-white hover:text-main-red">
+                        Contact
+                    </Link>
+                </div>
+
+                {/* Mobile dropdown menu button (only on small screens) */}
+                <div className="md:hidden ml-auto z-50" ref={dropdownRef}>
+                    <button
+                        onClick={() => setIsOpen(!isOpen)}
+                        className="
+                         flex items-center justify-center
+                         border-2 border-main-red
+                         hover:bg-white hover:text-main-red
+                         bg-main-red text-white transition
+                         rounded-lg
+                         w-12 h-12
+                          "
+                    >
+                        <Menu size={20} />
+                    </button>
+
+                    {/* Dropdown menu itself */}
+                    {isOpen && (
+                        <div className="absolute right-0 mt-2 bg-white border border-main-red rounded-lg shadow-md py-2 w-40">
+                            <Link
+                                href="/about"
+                                className="block px-4 py-2 text-main-red hover:bg-main-red hover:text-white transition"
+                                onClick={() => setIsOpen(false)}
+                            >
+                                About Us
+                            </Link>
+                            <Link
+                                href="/contact"
+                                className="block px-4 py-2 text-main-red hover:bg-main-red hover:text-white transition"
+                                onClick={() => setIsOpen(false)}
+                            >
+                                Contact
+                            </Link>
+                        </div>
+                    )}
                 </div>
             </div>
         </nav>

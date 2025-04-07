@@ -132,20 +132,33 @@ const Navbar = () => {
                     {/* Dropdown menu itself */}
                     {isOpen && (
                         <div className="absolute right-0 mt-2 bg-white border border-main-red rounded-lg shadow-md py-2 w-40">
-                            <Link
-                                href="/about"
-                                className="block px-4 py-2 text-main-red hover:bg-main-red hover:text-white transition"
-                                onClick={() => setIsOpen(false)}
-                            >
-                                About Us
-                            </Link>
-                            <Link
-                                href="/contact"
-                                className="block px-4 py-2 text-main-red hover:bg-main-red hover:text-white transition"
-                                onClick={() => setIsOpen(false)}
-                            >
-                                Contact
-                            </Link>
+                            {pathname !== '/' && (
+                                <Link
+                                    href="/"
+                                    className="block px-4 py-2 text-main-red hover:bg-main-red hover:text-white transition"
+                                    onClick={() => setIsOpen(false)}
+                                >
+                                    Home
+                                </Link>
+                            )}
+                            {pathname !== '/about' && (
+                                <Link
+                                    href="/about"
+                                    className="block px-4 py-2 text-main-red hover:bg-main-red hover:text-white transition"
+                                    onClick={() => setIsOpen(false)}
+                                >
+                                    About Us
+                                </Link>
+                            )}
+                            {pathname !== '/contact' && (
+                                <Link
+                                    href="/contact"
+                                    className="block px-4 py-2 text-main-red hover:bg-main-red hover:text-white transition"
+                                    onClick={() => setIsOpen(false)}
+                                >
+                                    Contact
+                                </Link>
+                            )}
                         </div>
                     )}
                 </div>

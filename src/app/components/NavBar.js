@@ -5,17 +5,22 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Menu } from 'lucide-react';
 import { SiFacebook, SiInstagram, SiX } from 'react-icons/si';
+import { usePathname } from 'next/navigation';
 
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const dropdownRef = useRef(null);
+    const pathname = usePathname();
 
     const navItems = [
         { name: 'Home', href: '/' },
         { name: 'About Us', href: '/about' },
         { name: 'Contact', href: '/contact' }
     ];
+
+
+
     // Close dropdown when clicking outside
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -79,12 +84,33 @@ const Navbar = () => {
                 {/* Navigation Button */}
                 {/* Full nav links (only on md and up) */}
                 <div className="hidden md:flex space-x-4 ml-auto z-50">
-                    <Link href="/about" className="font-bondrians text-xl text-white px-4 py-1.5 border border-main-red rounded-lg bg-main-red transition-colors duration-200 hover:bg-white hover:text-main-red">
-                        About Us
-                    </Link>
-                    <Link href="/contact" className="font-bondrians text-xl text-white px-4 py-1.5 border border-main-red rounded-lg bg-main-red transition-colors duration-200 hover:bg-white hover:text-main-red">
-                        Contact
-                    </Link>
+                    {pathname !== '/' && (
+                        <Link
+                            href="/"
+                            className="font-bondrians text-lg text-white px-4 py-1.5 border border-main-red rounded-lg bg-main-red transition-colors duration-200 hover:bg-white hover:text-main-red"
+                        >
+                            Home
+                        </Link>
+                    )}
+
+                    {pathname !== '/about' && (
+                        <Link
+                            href="/about"
+                            className="font-bondrians text-lg text-white px-4 py-1.5 border border-main-red rounded-lg bg-main-red transition-colors duration-200 hover:bg-white hover:text-main-red"
+                        >
+                            About Us
+                        </Link>
+                    )}
+
+                    {pathname !== '/contact' && (
+                        <Link
+                            href="/contact"
+                            className="font-bondrians text-lg text-white px-4 py-1.5 border border-main-red rounded-lg bg-main-red transition-colors duration-200 hover:bg-white hover:text-main-red"
+                        >
+                            Contact
+                        </Link>
+                    )}
+
                 </div>
 
                 {/* Mobile dropdown menu button (only on small screens) */}

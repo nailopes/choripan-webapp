@@ -29,7 +29,7 @@ const AboutSection = () => {
                 className="relative w-full aspect-square"
             >
                 <Image
-                    src="/images/apron.JPEG"
+                    src="/images/apron.JPG"
                     alt="Choripan History"
                     layout="fill"
                     objectFit="cover"

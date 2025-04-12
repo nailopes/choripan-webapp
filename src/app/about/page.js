@@ -42,7 +42,7 @@ export default function AboutPage() {
                         <div className="md:w-1/2">
                             <div className="relative rounded-lg overflow-hidden shadow-xl border-4 border-white">
                                 <Image
-                                    src="/images/chorizo.jpg"
+                                    src="/images/chorizo.JPG"
                                     alt="Traditional Choripan being served"
                                     width={600}
                                     height={400}

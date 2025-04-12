@@ -112,7 +112,7 @@ export default function AboutPage() {
                         <div className="order-1 md:order-1 grid grid-cols-1 gap-4">
                             <Image
                                 src="/images/grinder.jpg"
-                                alt="The Original 1999 Meat Grinder"
+                                alt="test"
                                 width={250}
                                 height={250}
                                 className="rounded-lg shadow-md object-cover w-full h-full"

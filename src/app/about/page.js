@@ -42,7 +42,7 @@ export default function AboutPage() {
                         <div className="md:w-1/2">
                             <div className="relative rounded-lg overflow-hidden shadow-xl border-4 border-white">
                                 <Image
-                                    src="/images/hero-choripan.png"
+                                    src="/images/chorizo.jpg"
                                     alt="Traditional Choripan being served"
                                     width={600}
                                     height={400}
@@ -54,8 +54,8 @@ export default function AboutPage() {
                         {/* Hero Content */}
                         <div className="md:w-1/2">
                             <h1 className="text-4xl font-bold text-main-red mb-6">A Tradition of Excellence</h1>
-                            <p className="text-gray-800 text-lg mb-8 leading-relaxed">
-                                For over 25 years, Choripan has carried the legacy of authentic South American flavors, passed down through generations and now brought to Calgary with pride, care, and the finest ingredients.
+                            <p className="text-gray-800 text-lg mb-8 leading-relaxed text-left">
+                            For over 25 years, our signature sausage has carried the bold, authentic flavors of South America—crafted with care, tradition, and the finest ingredients. Now, through Choripan, we’re bringing that passion to Calgary.
                             </p>
                             <div className="flex gap-6">
                                 <div className="text-center">
@@ -83,11 +83,11 @@ export default function AboutPage() {
 
                     <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
                         <div>
-                            <h3 className="text-2xl font-semibold text-main-red mb-4">The Original Choripan</h3>
-                            <p className="text-gray-700 mb-4 leading-relaxed">
+                            <h3 className="text-2xl font-semibold text-main-red mb-4">How It All Started</h3>
+                            <p className="text-gray-700 mb-4 leading-relaxed text-left">
                                 It began in 1999 when Hussa, a Brazilian with a deep appreciation for his wife's Uruguayan culinary heritage, created his first batch of homemade chorizo. What started as weekend cooking with a close friend soon became a family tradition celebrated for its distinctive taste and quality.
                             </p>
-                            <p className="text-gray-700 leading-relaxed">
+                            <p className="text-gray-700 leading-relaxed text-left">
                                 By 2009, this passion led to the opening of the first Choripan restaurant in Curitiba, Brazil. Though the physical location was short-lived, Hussa continued crafting his signature sausages and selling them by the kilogram to loyal customers, preserving the authentic techniques and flavors that made them special.                            </p>
                         </div>
                         <div className="grid grid-cols-2 gap-4">
@@ -109,16 +109,16 @@ export default function AboutPage() {
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-12 items-center">
-                        <div className="order-2 md:order-1 grid grid-cols-2 gap-4">
+                        <div className="order-1 md:order-1 grid grid-cols-1 gap-4">
                             <Image
-                                src="/images/meat-grinder.jpg"
+                                src="/images/grinder.jpg"
                                 alt="The Original 1999 Meat Grinder"
                                 width={250}
                                 height={250}
                                 className="rounded-lg shadow-md object-cover w-full h-full"
                             />
                             <Image
-                                src="/images/chorizo-making.jpg"
+                                src="/images/choripan-making.png"
                                 alt="Traditional Chorizo Making"
                                 width={250}
                                 height={250}
@@ -127,12 +127,12 @@ export default function AboutPage() {
                         </div>
                         <div className="order-1 md:order-2">
                             <h3 className="text-2xl font-semibold text-main-red mb-4">From South America to Calgary</h3>
-                            <p className="text-gray-700 mb-4 leading-relaxed">
+                            <p className="text-gray-700 mb-4 leading-relaxed text-left">
                                 The legacy continued when Hussa passed down the meat grinder, used since the very first batch in 1999, to his son Alex. This symbolic gesture marked the passing of the family recipe. With the recipe in hand, Alex invited his friend Fabio to partner with him in reviving the tradition, and together, they are bringing the family’s culinary heritage to Calgary.                            </p>
-                            <p className="text-gray-700 leading-relaxed">
-                                Introducing "The Best SAUSWICH in the world" where every bite is packed with tradition and flavor. Each bite delivers the genuine taste of South American street food culture, prepared with care and served with pride.
+                            <p className="text-gray-700 leading-relaxed text-left">
+                                Introducing <i>"The Best SAUSWICH in the world"</i> where every bite is packed with tradition and flavor. Each bite delivers the genuine taste of South American street food culture, prepared with care and served with pride.
                             </p>
-                            <p className="text-gray-700 mt-4">
+                            <p className="text-gray-700 mt-4 leading-relaxed text-left">
                                 We can&apos;t wait to share this experience with you. Find us, follow us, and take a bite—you&apos;ll taste the tradition in every sandwich.
                             </p>
                         </div>

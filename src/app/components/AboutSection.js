@@ -29,7 +29,7 @@ const AboutSection = () => {
                 className="relative w-full aspect-square"
             >
                 <Image
-                    src="/images/apron.JPG"
+                    src="/images/apron.jpg"
                     alt="Choripan History"
                     layout="fill"
                     objectFit="cover"
@@ -50,7 +50,7 @@ const AboutSection = () => {
                 <h2 className="text-4xl font-bondrians text-main-red mb-4">
                     Our Story
                 </h2>
-                <p className="text-lg font-sitka text-dark-brown leading-relaxed">
+                <p className="text-lg font-sitka text-dark-brown leading-relaxed text-left">
                     Choripan is more than just a business—it&apos;s a tradition, a passion, and a story that spans over 25 years. What
                     started in 1999 as a homemade chorizo tradition between friends has evolved into a celebration of South American street food.
                 </p>

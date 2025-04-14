@@ -42,7 +42,7 @@ export default function AboutPage() {
                         <div className="md:w-1/2">
                             <div className="relative rounded-lg overflow-hidden shadow-xl border-4 border-white">
                                 <Image
-                                    src="/images/chorizo.JPG"
+                                    src="/images/Chorizo.JPG"
                                     alt="Traditional Choripan being served"
                                     width={600}
                                     height={400}
@@ -111,7 +111,7 @@ export default function AboutPage() {
                     <div className="grid md:grid-cols-2 gap-12 items-center">
                         <div className="order-1 md:order-1 grid grid-cols-1 gap-4">
                             <Image
-                                src="/images/grinder.jpg"
+                                src="/images/grinder.JPG"
                                 alt="The Original 1999 Meat Grinder"
                                 width={250}
                                 height={250}

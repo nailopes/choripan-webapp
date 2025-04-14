@@ -55,7 +55,7 @@ export default function AboutPage() {
                         <div className="md:w-1/2">
                             <h1 className="text-4xl font-bold text-main-red mb-6">A Tradition of Excellence</h1>
                             <p className="text-gray-800 text-lg mb-8 leading-relaxed text-left">
-                            For over 25 years, our signature sausage has carried the bold, authentic flavors of South America—crafted with care, tradition, and the finest ingredients. Now, through Choripan, we’re bringing that passion to Calgary.
+                                For over 25 years, our signature sausage has carried the bold, authentic flavors of South America—crafted with care, tradition, and the finest ingredients. Now, through Choripan, we’re bringing that passion to Calgary.
                             </p>
                             <div className="flex gap-6">
                                 <div className="text-center">
@@ -82,7 +82,7 @@ export default function AboutPage() {
                     <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">Our Legacy</h2>
 
                     <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-                        <div>
+                        <div className="order-1 md:order-1">
                             <h3 className="text-2xl font-semibold text-main-red mb-4">How It All Started</h3>
                             <p className="text-gray-700 mb-4 leading-relaxed text-left">
                                 It began in 1999 when Hussa, a Brazilian with a deep appreciation for his wife's Uruguayan culinary heritage, created his first batch of homemade chorizo. What started as weekend cooking with a close friend soon became a family tradition celebrated for its distinctive taste and quality.
@@ -90,39 +90,39 @@ export default function AboutPage() {
                             <p className="text-gray-700 leading-relaxed text-left">
                                 By 2009, this passion led to the opening of the first Choripan restaurant in Curitiba, Brazil. Though the physical location was short-lived, Hussa continued crafting his signature sausages and selling them by the kilogram to loyal customers, preserving the authentic techniques and flavors that made them special.                            </p>
                         </div>
-                        <div className="grid grid-cols-2 gap-4">
+                        <div className="order-2 md:order-2 grid grid-cols-2 gap-4">
                             <Image
                                 src="/images/hussa.jpeg"
                                 alt="Hussa - The Founder"
                                 width={250}
-                                height={250}
-                                className="rounded-lg shadow-md object-cover w-full h-full"
+                                height={350}
+                                className="rounded-lg shadow-md object-cover w-[250px] h-[350px]"
                             />
                             <Image
                                 src="/images/original-restaurant.jpeg"
                                 alt="Original Choripan in Brazil"
                                 width={250}
-                                height={250}
-                                className="rounded-lg shadow-md object-cover w-full h-full"
+                                height={350}
+                                className="rounded-lg shadow-md object-cover w-[250px] h-[350px]"
                             />
                         </div>
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-12 items-center">
-                        <div className="order-1 md:order-1 grid grid-cols-1 gap-4">
+                        <div className="order-2 md:order-1 grid grid-cols-1 gap-4 items-center">
                             <Image
                                 src="/images/grinder.JPG"
                                 alt="The Original 1999 Meat Grinder"
-                                width={250}
+                                width={450}
                                 height={250}
-                                className="rounded-lg shadow-md object-cover w-full h-full"
+                                className="rounded-lg shadow-md object-cover w-[450px] h-[250px]"
                             />
                             <Image
                                 src="/images/choripan-making.png"
                                 alt="Traditional Chorizo Making"
-                                width={250}
+                                width={450}
                                 height={250}
-                                className="rounded-lg shadow-md object-cover w-full h-full"
+                                className="rounded-lg shadow-md object-cover w-[450px] h-[250px]"
                             />
                         </div>
                         <div className="order-1 md:order-2">

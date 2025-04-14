@@ -54,7 +54,7 @@ const Navbar = () => {
                 </Link>
 
                 {/* Social Media (Left Side - Hidden on Small Screens, Visible on Tablets and Larger) */}
-                <div className="hidden md:flex space-x-4">
+                <div className="flex space-x-4">
                     {/* <a
                         href="https://www.facebook.com"
                         target="_blank"

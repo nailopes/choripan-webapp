@@ -214,7 +214,7 @@ export default function AboutPage() {
                         <div className="flex items-center">
                             <div className="mr-6">
                                 <Image
-                                    src="/images/alex.jpeg"
+                                    src="/images/alex.png"
                                     alt="Alex - Co-Founder"
                                     width={600}
                                     height={600}
